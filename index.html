@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>one-rep-max-calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1RM Calculator | Strength Training Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/5Nzzz91y/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://i.postimg.cc/xjhHqJwB/favicon-96x96.png">
+    
+    <!-- Web App Manifest Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="https://i.postimg.cc/VkcCWyLR/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://i.postimg.cc/zGSRddy1/web-app-manifest-512x512.png">
+</head>
+
+<body>
+    <!-- Coach Introduction Section -->
+    <section class="intro-section">
+        <div class="coach-container" id="coachContainer">
+            <div class="coach-header">
+                <img src="https://i.postimg.cc/ryHmDDkM/20250116_092914_0000.png" alt="Coach" class="coach-avatar" id="coachAvatar">
+                <div class="coach-info">
+                    <div class="coach-title">
+                       Ahmed Essam
+                        <span class="verified-badge">
+                            <img src="https://i.postimg.cc/HsF4yRvx/image__3_-removebg-preview.png" alt="Verified">
+                        </span>
+                    </div>
+                    <div class="coach-subtitle">Certified Personal Trainer & Fitness Instructor | Coach</div>
+                </div>
+            </div>
+            <div class="coach-message" id="coachMessage">
+                <p>Alright, listen up. One of the biggest mistakes I see people make in the gym is not knowing how much weight they should be lifting for a given rep range.</p>
+                <p>If your program says <span class="highlight">'lift 80% of your 1RM'</span>, and you have no idea what that means, you're basically guessing your way through training.</p>
+                <p>That's inefficient and, quite frankly, stupid.</p>
+                <p>So, to solve that, I've created a tool that calculates your percentages for you.</p>
+                <p>You input your 1RM, or any weight you know for a given rep, and it tells you exactly how much you should be lifting at different intensities.</p>
+                <p>Simple. No more guesswork. No more wasting time.</p>
+                <p>Just effective training based on actual numbers—because strength progression isn't magic, it's math.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+        <div class="calculator-container">
+            <h1 class="calculator-title">One-Rep Max Calculator</h1>
+            
+            <form id="calculator-form">
+                <div class="input-group">
+                    <label for="weight" class="input-label">Weight Lifted (kg)</label>
+                    <input 
+                        type="number" 
+                        id="weight" 
+                        class="input-field" 
+                        placeholder="Enter weight in kg"
+                        min="1"
+                        max="500"
+                        required
+                    >
+                </div>
+                
+                <div class="input-group">
+                    <label for="reps" class="input-label">Number of Repetitions</label>
+                    <input 
+                        type="number" 
+                        id="reps" 
+                        class="input-field" 
+                        placeholder="Enter reps (1-20)"
+                        min="1"
+                        max="20"
+                        required
+                    >
+                </div>
+                
+                <div id="error-container"></div>
+                
+                <button type="submit" id="calculate-btn" class="calculate-btn">
+                    Calculate 1RM
+                </button>
+            </form>
+            
+            <div id="results-container"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
